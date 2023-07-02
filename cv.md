@@ -1,6 +1,7 @@
 # CV#1. Markdown & Git
 # Daria Mirzaeva
 ![foto](src/images/daria.jpg)
+
 ___
 
 ### Contacts:
@@ -10,17 +11,20 @@ ___
 * **GitHub:** DariaMirzaeva
 * **Discord:** Daria @DariaMirzaeva
 * **Telegram:** @Daria_Mirzaeva
-____
+
+___
 
 ### Above me:
 Beginning front-end developer. 
-____
+
+___
 
 ### Scills:
 
 * **Programming Languages:** HTML/CSS, JavaScript, Swift
 * **IDE:** WebStorm, Xcode, Figma, Fotoshop
-____
+
+___
 
 ### Code example:
 
@@ -43,7 +47,6 @@ const max = list => {
     }
     return m;
 }
-}
 ```
 
 ___
@@ -52,6 +55,7 @@ ___
 *2014-2015* - content manager;
 
 *2019-2020* - content manager, HTML coder.
+
 ___
 
 ### Education:
@@ -59,11 +63,9 @@ ___
 **National Aerospace University "Kharkiv Aviation Institute"**
 - Faculty of Rocket and Space Engineering
 
-____
+___
 
 ### Languages:
 * English (A2 Pre-Intermediate)
 * Russian (native)
 * Ukrainian (native)
-
-
