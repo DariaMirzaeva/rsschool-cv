@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>CV Mirzaeva D.A.</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="container">
+    <section class="cv-card">
+      <header class="header">
+        <div class="header__wrap">
+          <h1 class="header__title">Daria <br/>
+            <strong>Mirzaeva</strong>
+          </h1>
+          <div class="header__divider"></div>
+          <h2 class="header__subtitle">Frontend Developer</h2>
+          <img class="header__photo" src="src/images/daria.jpg" alt="my-photo">
+        </div>
+      </header>
+
+      <section class="content">
+        <main class="main">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a class="nav__link" href="#above-me">Above me</a></li>
+              <li><a class="nav__link" href="#experience">Experiance</a></li>
+              <li><a class="nav__link" href="#code">Code</a></li>
+              <li><a class="nav__link" href="#skills">Skills</a></li>
+              <li><a class="nav__link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="content__wrap">
+            <div class="content__box">
+              <h2 id="above-me" class="subtitle">Above me</h2>
+              <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my
+                knowledge but I also want to apply them to the real products.</p>
+            </div>
+
+            <div class="content__box">
+              <h2 id="experience" class="subtitle">Work experiance</h2>
+              <ul>
+                <li>2014-2015 - content manager</li>
+                <li>2019-2020 - content manager, HTML coder</li>
+              </ul>
+            </div>
+
+            <div class="content__box">
+              <h2 id="code" class="subtitle">Code example</h2>
+              <p class="my-profile">View my codewars profile
+                <a href="https://www.codewars.com/users/dariamirzaeva@gmail.com/completed_solutions"
+                   target="_blank">Daria</a>
+              </p>
+              <code>
+            <pre>
+const min = list => {
+    let m = list[0];
+
+    for(let i = 1; i < list.length; i++){
+        if(list[i] < m) m = list[i];
+    }
+
+    return m;
+}
+
+const max = list => {
+    let m = list[0];
+
+    for(let i = 1; i < list.length; i++){
+        if(list[i] > m) m = list[i];
+    }
+
+    return m;
+}
+            </pre>
+              </code>
+            </div>
+          </div>
+        </main>
+
+        <aside class="aside">
+          <div class="aside__box">
+            <h2 class="subtitle">Education</h2>
+            <p>2008-2014 National Aerospace University "Kharkiv Aviation Institute"
+              Faculty of Rocket and Space Engineering, Master’s Degree
+            </p>
+          </div>
+
+          <div class="aside__box">
+            <h2 class="aside__languages subtitle">Languages</h2>
+            <ul>
+              <li>English (A2 Pre-Intermediate)</li>
+              <li>Russian (native)</li>
+              <li>Ukrainian (native)</li>
+            </ul>
+          </div>
+
+          <div class="aside__box">
+            <h2 id="skills" class="subtitle">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/bem.png" alt="icon-bem">
+                BEM methodology
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/html.svg" alt="icon-html">
+                HTML
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/css.svg" alt="icon-css">
+                CSS
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/sass.svg" alt="icon-sass">
+                SASS/SCSS
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/bootstrap.svg" alt="icon-bootstrap">
+                Bootstrap
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/javascript.svg" alt="icon-javascript">
+                JavaScrip
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/swift.svg" alt="icon-swift">
+                Swift
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/figma.svg" alt="icon-figma">
+                Figma
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/photoshop.png" alt="icon-photoshop">
+                Photoshop
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/github.svg" alt="icon-github">
+                GitHub
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <p>2023</p>
+        <h4 id="contacts">
+          <a class="nav__link" href="mailto: dariamirzaeva@gmail.com" target="_blank">E-mail</a>
+        </h4>
+        <h4>
+          <a class="nav__link" href="https://github.com/DariaMirzaeva" target="_blank">GitHub</a>
+        </h4>
+        <a href="https://rs.school/js/" target="_blank" class="footer__logo-link">
+          <img class="footer__logo" src="src/images/rs_school_js.svg" alt="logo-rsschool">
+        </a>
+      </footer>
+    </section>
+  </div>
+</div>
+</body>
+</html>
