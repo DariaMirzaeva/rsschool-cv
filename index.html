@@ -4,17 +4,107 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
 
-  <title>Title</title>
+  <title>CV Mirzaeva D.A.</title>
 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="container">
-      <h1>My CV</h1>
-    </div>
+<div class="wrapper">
+  <div class="container">
+    <section class="cv-card">
+      <header class="header">
+        <div class="header__wrap">
+          <h1 class="header__title">Daria <br/>
+            <strong>Mirzaeva</strong>
+          </h1>
+          <div class="header__divider"></div>
+          <h2 class="header__subtitle">Frontend Developer</h2>
+          <img class="header__photo" src="src/images/daria.jpg" alt="my-photo">
+        </div>
+      </header>
+
+      <section class="content">
+        <main class="main">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a class="nav__link" href="#above-me">Above me</a></li>
+              <li><a class="nav__link" href="#experience">Experiance</a></li>
+              <li><a class="nav__link" href="#code">Code</a></li>
+              <li><a class="nav__link" href="#skills">Skills</a></li>
+              <li><a class="nav__link" href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <h2 id="above-me">Above me</h2>
+          <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my
+            knowledge but I also want to apply them to the real products.</p>
+          <h2 id="experience">Work experiance</h2>
+          <ul>
+            <li>2014-2015 - content manager</li>
+            <li>2019-2020 - content manager, HTML coder</li>
+          </ul>
+          <h2 id="code">Code example</h2>
+          <code>
+            <pre>
+              const min = list => {
+    let m = list[0];
+    for(let i = 1; i < list.length; i++){
+        if(list[i] < m) m = list[i];
+    }
+    return m;
+}
+
+const max = list => {
+    let m = list[0];
+    for(let i = 1; i < list.length; i++){
+        if(list[i] > m) m = list[i];
+    }
+    return m;
+}
+            </pre>
+          </code>
+        </main>
+
+        <aside class="aside">
+          <h2>Education</h2>
+          <p>2008-2014 National Aerospace University "Kharkiv Aviation Institute"
+            Faculty of Rocket and Space Engineering, Master’s Degree</p>
+          <h2>Languages</h2>
+          <ul>
+            <li>English (A2 Pre-Intermediate)</li>
+            <li>Russian (native)</li>
+            <li>Ukrainian (native)</li>
+          </ul>
+          <h2 id="skills">Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>Bootstrap</li>
+            <li>JavaScrip</li>
+            <li>Swift</li>
+            <li>Figma</li>
+            <li>Fotoshop</li>
+            <li>WebStorm</li>
+            <li>Xcode</li>
+            <li>GitHub</li>
+          </ul>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <h4 id="contacts">E-mail</h4>
+        <h4>GitHub</h4>
+        <img src="" alt="logo-rsschool">
+      </footer>
+    </section>
   </div>
+</div>
 </body>
 </html>
