@@ -41,67 +41,130 @@
               <li><a class="nav__link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
-          <h2 id="above-me">Above me</h2>
-          <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my
-            knowledge but I also want to apply them to the real products.</p>
-          <h2 id="experience">Work experiance</h2>
-          <ul>
-            <li>2014-2015 - content manager</li>
-            <li>2019-2020 - content manager, HTML coder</li>
-          </ul>
-          <h2 id="code">Code example</h2>
-          <code>
+          <div class="content__wrap">
+            <div class="content__box">
+              <h2 id="above-me" class="subtitle">Above me</h2>
+              <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my
+                knowledge but I also want to apply them to the real products.</p>
+            </div>
+
+            <div class="content__box">
+              <h2 id="experience" class="subtitle">Work experiance</h2>
+              <ul>
+                <li>2014-2015 - content manager</li>
+                <li>2019-2020 - content manager, HTML coder</li>
+              </ul>
+            </div>
+
+            <div class="content__box">
+              <h2 id="code" class="subtitle">Code example</h2>
+              <p class="my-profile">View my codewars profile
+                <a href="https://www.codewars.com/users/dariamirzaeva@gmail.com/completed_solutions"
+                   target="_blank">Daria</a>
+              </p>
+              <code>
             <pre>
-              const min = list => {
+const min = list => {
     let m = list[0];
+
     for(let i = 1; i < list.length; i++){
         if(list[i] < m) m = list[i];
     }
+
     return m;
 }
 
 const max = list => {
     let m = list[0];
+
     for(let i = 1; i < list.length; i++){
         if(list[i] > m) m = list[i];
     }
+
     return m;
 }
             </pre>
-          </code>
+              </code>
+            </div>
+          </div>
         </main>
 
         <aside class="aside">
-          <h2>Education</h2>
-          <p>2008-2014 National Aerospace University "Kharkiv Aviation Institute"
-            Faculty of Rocket and Space Engineering, Master’s Degree</p>
-          <h2>Languages</h2>
-          <ul>
-            <li>English (A2 Pre-Intermediate)</li>
-            <li>Russian (native)</li>
-            <li>Ukrainian (native)</li>
-          </ul>
-          <h2 id="skills">Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>Bootstrap</li>
-            <li>JavaScrip</li>
-            <li>Swift</li>
-            <li>Figma</li>
-            <li>Fotoshop</li>
-            <li>WebStorm</li>
-            <li>Xcode</li>
-            <li>GitHub</li>
-          </ul>
+          <div class="aside__box">
+            <h2 class="subtitle">Education</h2>
+            <p>2008-2014 National Aerospace University "Kharkiv Aviation Institute"
+              Faculty of Rocket and Space Engineering, Master’s Degree
+            </p>
+          </div>
+
+          <div class="aside__box">
+            <h2 class="aside__languages subtitle">Languages</h2>
+            <ul>
+              <li>English (A2 Pre-Intermediate)</li>
+              <li>Russian (native)</li>
+              <li>Ukrainian (native)</li>
+            </ul>
+          </div>
+
+          <div class="aside__box">
+            <h2 id="skills" class="subtitle">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/bem.png" alt="icon-bem">
+                BEM methodology
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/html.svg" alt="icon-html">
+                HTML
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/css.svg" alt="icon-css">
+                CSS
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/sass.svg" alt="icon-sass">
+                SASS/SCSS
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/bootstrap.svg" alt="icon-bootstrap">
+                Bootstrap
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/javascript.svg" alt="icon-javascript">
+                JavaScrip
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/swift.svg" alt="icon-swift">
+                Swift
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/figma.svg" alt="icon-figma">
+                Figma
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/photoshop.png" alt="icon-photoshop">
+                Photoshop
+              </li>
+              <li class="skills-list__item">
+                <img class="skills-list__icon" src="src/images/icon/github.svg" alt="icon-github">
+                GitHub
+              </li>
+            </ul>
+          </div>
         </aside>
       </section>
 
       <footer class="footer">
-        <h4 id="contacts">E-mail</h4>
-        <h4>GitHub</h4>
-        <img src="" alt="logo-rsschool">
+        <p>2023</p>
+        <h4 id="contacts">
+          <a class="nav__link" href="mailto: dariamirzaeva@gmail.com" target="_blank">E-mail</a>
+        </h4>
+        <h4>
+          <a class="nav__link" href="https://github.com/DariaMirzaeva" target="_blank">GitHub</a>
+        </h4>
+        <a href="https://rs.school/js/" target="_blank" class="footer__logo-link">
+          <img class="footer__logo" src="src/images/rs_school_js.svg" alt="logo-rsschool">
+        </a>
       </footer>
     </section>
   </div>
