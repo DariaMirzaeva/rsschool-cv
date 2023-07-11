@@ -25,11 +25,24 @@ ol, ul {
     list-style: none;
 }
 
+a {
+    box-shadow: inset 0 0 0 0 #f68664;
+    color: #fff;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    text-decoration: none;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+    box-shadow: inset 100px 0 0 0 #f68664;
+    color: white;
+}
+
 a:active,
 a:focus {
     outline: none;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 /*reset*/
@@ -58,6 +71,9 @@ body {
 }
 
 .cv-card {
+    display: flex;
+    flex-direction: column;
+
     min-height: 100vh;
 
     background: #fff;
@@ -136,13 +152,42 @@ body {
     display: flex;
 }
 
+.content__wrap {
+   padding: 30px 25px 10px;
+}
+
 .main   {
     flex: 1 1 100%;
 }
 .aside {
     flex: 0 0 280px;
-    padding: 50px 20px 30px;
+    padding: 30px 20px;
     background: #ebebeb;
+}
+
+.skills-list {}
+.skills-list__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 8px;
+}
+
+.skills-list__item:last-child {
+    margin-bottom: 0;
+}
+
+
+.skills-list__icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.content__box,
+.aside__box {
+    margin-bottom: 30px;
 }
 
 .nav,
@@ -162,5 +207,38 @@ body {
     text-decoration: none;
 }
 
+.subtitle {
+    margin-bottom: 10px;
+}
 
+.my-profile {
+    margin-bottom: 15px;
+}
 
+.my-profile a:active,
+.my-profile a:focus{
+    color: #000;
+}
+
+.my-profile a {
+    color: #861111;
+
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: auto;
+}
+
+.footer__logo-link:hover {
+    box-shadow: none;
+}
+
+.footer__logo {
+    width: 55px;
+    height: 20px;
+    background: #ebebeb;
+}
