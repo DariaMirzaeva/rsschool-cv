@@ -18,10 +18,10 @@
 <body>
 <div class="wrapper">
   <div class="container">
-    <section class="cv-card">
+    <div class="cv-card">
       <header class="header">
         <div class="header__wrap">
-          <h1 class="header__title">Daria <br/>
+          <h1 class="header__title">Daria <br>
             <strong>Mirzaeva</strong>
           </h1>
           <div class="header__divider"></div>
@@ -30,7 +30,7 @@
         </div>
       </header>
 
-      <section class="content">
+      <div class="content">
         <main class="main">
           <nav class="nav">
             <ul class="nav-list">
@@ -41,7 +41,7 @@
               <li><a class="nav__link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
-          <div class="content__wrap">
+          <section class="content__wrap">
             <div class="content__box">
               <h2 id="above-me" class="subtitle">Above me</h2>
               <p>I am looking forward to working in teams as well as individually. I am not only willing to deepen my
@@ -62,13 +62,13 @@
                 <a href="https://www.codewars.com/users/dariamirzaeva@gmail.com/completed_solutions"
                    target="_blank">Daria</a>
               </p>
+              <pre>
               <code>
-            <pre>
 const min = list => {
     let m = list[0];
 
-    for(let i = 1; i < list.length; i++){
-        if(list[i] < m) m = list[i];
+    for(let i = 1; i &lt list.length; i++){
+        if(list[i] &lt m) m = list[i];
     }
 
     return m;
@@ -77,16 +77,16 @@ const min = list => {
 const max = list => {
     let m = list[0];
 
-    for(let i = 1; i < list.length; i++){
+    for(let i = 1; i &lt list.length; i++){
         if(list[i] > m) m = list[i];
     }
 
     return m;
 }
-            </pre>
               </code>
+                </pre>
             </div>
-          </div>
+          </section>
         </main>
 
         <aside class="aside">
@@ -152,12 +152,12 @@ const max = list => {
             </ul>
           </div>
         </aside>
-      </section>
+      </div>
 
       <footer class="footer">
         <p>2023</p>
         <h4 id="contacts">
-          <a class="nav__link" href="mailto: dariamirzaeva@gmail.com" target="_blank">E-mail</a>
+          <a class="nav__link" href="mailto:dariamirzaeva@gmail.com" target="_blank">E-mail</a>
         </h4>
         <h4>
           <a class="nav__link" href="https://github.com/DariaMirzaeva" target="_blank">GitHub</a>
@@ -166,7 +166,7 @@ const max = list => {
           <img class="footer__logo" src="src/images/rs_school_js.svg" alt="logo-rsschool">
         </a>
       </footer>
-    </section>
+    </div>
   </div>
 </div>
 </body>
