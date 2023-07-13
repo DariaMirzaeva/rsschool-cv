@@ -67,8 +67,8 @@
 const min = list => {
     let m = list[0];
 
-    for(let i = 1; i &lt list.length; i++){
-        if(list[i] &lt m) m = list[i];
+    for(let i = 1; i &lt; list.length; i++){
+        if(list[i] &lt; m) m = list[i];
     }
 
     return m;
@@ -77,7 +77,7 @@ const min = list => {
 const max = list => {
     let m = list[0];
 
-    for(let i = 1; i &lt list.length; i++){
+    for(let i = 1; i &lt; list.length; i++){
         if(list[i] > m) m = list[i];
     }
 
